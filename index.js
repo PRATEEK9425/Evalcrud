@@ -10,6 +10,9 @@ app.use(cors({
     origin:"*"
 }))
 
+app.get("/",(req,res)=>{
+res.send("Welcome")
+})
 
 app.use("/users",LoginRoutes)
 // app.use(AuthMiddlewear)
